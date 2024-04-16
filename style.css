@@ -1,45 +1,92 @@
 body{
-    background-image: url('images/image_back.jpg');
+    background-image: url('images/back_image01.jpg');
     background-size: cover;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    background-repeat: no-repeat;
+    
 }
 .login_area{
     background-color: transparent;
-    border: 1px solid rgb(47, 87, 97);
-    backdrop-filter: blur(20px);
+    border: 1px solid rgba(61, 4, 32, 0.801);
+    backdrop-filter: blur(30px);
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 400px;
-    font-size: large;
-    color: rgb(47, 87, 97);
+    width: 450px;
+    font-size:larger;
+    color: rgb(250, 231, 213);
     border-radius: 10px;
     padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(36, 33, 33, 0.404);
+    text-align: center;
 }
 .usuario_campo{
-    padding: 15px;
+    padding-top: 10px;
 }
 .usuario_campo input{
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     border-radius: 25px;
     background-color: transparent;
     outline: none;
-    border: 2px solid rgba(41, 99, 114, 0.329);
+    border: 2px solid rgba(61, 4, 32, 0.801);
+    color: rgb(250, 231, 213);
+    padding: 0px 0px 0px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .usuario_campo input::placeholder{
-    color: rgba(41, 99, 114, 0.479);
+    color: rgba(61, 4, 32, 0.589);
     font-size: medium;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .usuario_campo i{
     position: absolute;
-    right: 90px;
+    right: 65px;
     top: 34%;
-    color: rgb(47, 87, 97);
+    filter: opacity(0.6);
+}
+a{
+    color: rgba(48, 3, 25, 0.884) ;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+.lembrar_esqueci {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 10px 20px 40px 20px;
+}
+.criar_conta{
+    font-size: 15px;
+}
+button{
+    background-color: rgba(61, 4, 32, 0.884);
+    color: rgb(250, 231, 213);
+    border-radius: 25px;
+    width: 100%;
+    height: 5vh;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(36, 33, 33, 0.178);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+}
+button:hover{
+    background-color:rgba(48, 3, 25, 0.884) ;
+    box-shadow: none;
+    cursor:pointer;
+}
+#btn_senha{
+    position: absolute;
+    margin-top: 60px;
 }

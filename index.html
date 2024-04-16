@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/fav_icon_login.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sunset</title>
 </head>
 <body>
     <div class="login_area">
         <form action="">
-        <h1>Login</h1>
+        <h1> Sunset Login</h1>
         <div class="usuario_campo">
-            <input placeholder="Usuário" required>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO5JREFUSEvVldENwjAMRK+bwCTAJjAJMAlsApsAkwCHEtS6jm0ligSWqvaj9bPPznVA5xg650cUsACwB7B9X3cAVwDH9GzWGAGsAVyULATtEqwIiQBuANiBFoQsrRY8ACU5OXPaWF14gEPS3mJwFnxPDQ9Q0n+cjHM41wKoPQfcbQYszOrC1J8fexLlzvM5IIyRV5T35nPg5fhtANdvleYgK82W8ahZU2rNA1baHg2m2oY25Mjul3SfbZUGsLzHG/jMmyQgYg0eZGIdEkDdaXAtwX8FpfqEBLTIk3NOZJKAZ0vpo2+/eaNWUc39f8ALCDsoGfKFTMgAAAAASUVORK5CYII="/>
+            <input placeholder="Usuário" id="nome_box" required type="text" id="input">
+            <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvFlOFxgkAQhd9iI6SHkPGf2olUIB2oHUAFppPwMxPSQ85C9GUYkBHwdi+MTPh7x/tu3+4+wcyfzKyPIECGZczosgexBeAgKOW6OOb4dNYDTUCG1zVFPh4IOSHTHN+lBjEBO0l+AMQeEVewepkMyJBsKTipAuRGq0KtIIveDiT3KkDkmF+/Dr47OsDvf6cnRJqjep8IWMaUS93geXpQv0qZIojhf/2/OUUNpNuDdWuFEy7Sp+yBtUjWeVAFlsj0PWjGdAXgZs29VhMZkPOfx7RtbL1gvukZPtobGyOLtKmxrHo0VSOAkT0WY5RNPUBINFgEGURHD7CLklOb+ZaOdl4WrDa3C32AHs2h0J5NQwBDVbR7BatO938X7RnVzF7BL0UdeBk5qt2OAAAAAElFTkSuQmCC"/></i>
         </div>
-        <div class="senha_campo">
-            <input placeholder="Senha" required>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANNJREFUSEvtld0NwiAUhU830U10EnUSdRLdRDfRTdQvgcTG2x7ANH0pLy0Bznd/odPEo5tYX6WAjaSdJL6Mp6TzZ353BpYA9pIuA0JATmMQB8DiWxJA7Jr+geLRStI6eRRyHABxIJGlWH5M0MOQFw7wSgejfVj/SNbjRZMHYwAE3bqtIifg1ucBkFSSl2velXpepyd+eiNKHokjgS0DyPb7YATIcW0BcKanuQCiMC4hssU1f4j+aTReut7NGvUBVwQvWG03F18VNsg1G9yDU6MV7n0DDfwoGYxA/o8AAAAASUVORK5CYII="/>
-        </div>
+        <div class="usuario_campo">
+            <input placeholder="Senha" required type="password" id="senha">
+            <i class="bi bi-eye"  id="btn_senha" onclick="mostarSenha()"></i>
+            </div>
         <div class="lembrar_esqueci">
-            <label><input type="checkbox"> Lembrar de mim.</label>
+            <label><input type="checkbox"><span class="checkmark"></span>Lembrar de mim.</label>
             <a href="#">Esqueceu a senha?</a>
         </div>
         <div class="login_button">
@@ -32,4 +35,5 @@
     </div>
     
 </body>
+<script src="main.js"></script>
 </html>
