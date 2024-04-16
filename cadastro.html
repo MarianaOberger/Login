@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/fav_icon_login.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sunset - Cadastro</title>
+</head>
+<body>
+    <div class="cadastro_area">
+        <form action="">
+        <h1> Sunset Cadastre-se</h1>
+        <div class="cadastro_campo">
+            <input placeholder="Usuário" id="nome_cadastro" required type="text">
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="Senha" required type="password" id="senha_cadastro">
+            <i class="bi bi-eye"  id="btn_senha_cadastro" onclick="mostarSenhaCadastro()"></i>
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="Data de nascimento" required type="date" id="nascimento_cadastro">
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="E-mail" required type="email" id="email_cadastro">
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="Telefone" required type="tel" id="telefone_cadastro">
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="Cidade" required type="text" id="cidade_cadastro">
+        </div>
+        <div class="cadastro_campo">
+            <input placeholder="País" required type="text" id="pais_cadastro">
+        </div>
+
+        
+        <div class="cadastro_button">
+            <button>Cadastrar</button>
+        </div>
+        
+        
+
+        </form>
+        <div class="voltar_login">
+            <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALVJREFUSEvllM0RhCAMRr9oI9qJ3raNrUzL4GYrNEJmB2f8QUFkEk7LBQ/ynl+IIVReVJmPPxF8gA5tOxjn5tKSZku0wokmEA0g+pZKHgUBHLCGuVdLoAH3HxNNoAWPCjThN4E2PBBc4KV3GbxvmPfS7w+roGkW+F24ogLPvEgsmEcDWInv1kXaknSbHuUSJUn+yVpJ8qNCmOTdsNsk2sNu656q41rSoslhJ4Wez2fvQCqrLvgBomhRGVhln54AAAAASUVORK5CYII="/></a>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
