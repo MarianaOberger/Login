@@ -1,0 +1,45 @@
+body{
+    background-image: url('images/image_back.jpg');
+    background-size: cover;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.login_area{
+    background-color: transparent;
+    border: 1px solid rgb(47, 87, 97);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    font-size: large;
+    color: rgb(47, 87, 97);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.usuario_campo{
+    padding: 15px;
+}
+.usuario_campo input{
+    width: 100%;
+    height: 4vh;
+    border-radius: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(41, 99, 114, 0.329);
+}
+.usuario_campo input::placeholder{
+    color: rgba(41, 99, 114, 0.479);
+    font-size: medium;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.usuario_campo i{
+    position: absolute;
+    right: 90px;
+    top: 34%;
+    color: rgb(47, 87, 97);
+}
